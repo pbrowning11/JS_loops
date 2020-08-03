@@ -79,20 +79,72 @@ const password = 'p@ss';
 
 // break and continue
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
-for (let i = 0; i < scores.length; i++) {
+// for (let i = 0; i < scores.length; i++) {
 
-    
-    if(scores[i] === 0) {
-        continue;
+
+//     if(scores[i] === 0) {
+//         continue;
+//     }
+
+//     console.log('you score: ', scores[i]);
+
+//     if(scores[i] === 100) {
+//         console.log('congrats, you got the top score');
+//         break;
+//     }
+
+// }
+
+// const grade = 'D';
+
+//USING SWITCH STATEMENTS
+// switch (grade) {
+//     case 'A':
+//         console.log('you got an A!');
+//         break;
+//     case 'B':
+//         console.log('you got a B!');
+//         break;
+//     case 'C':
+//         console.log('you got a C!');
+//         break;
+//     case 'D':
+//         console.log('you got a D!');
+//         break;
+//     case 'E':
+//         console.log('you got an E!');
+//         break;
+//     default:
+//         console.log('not a valid grade');
+// }
+
+// //USING IF STATEMENTS
+// if (grade === 'A') {
+
+// } else if (grade === 'B') {
+
+// } else if (grade === 'C') {
+
+// } else if (grade === 'D') {
+
+// }else if (grade === 'E') {
+
+// } else {
+
+// }
+
+//block level scope with variables
+const age = 30;
+//const age = 50;
+if(true) {
+  const age = 40;
+  const name = 'parker';
+    console.log('inside 1st code block: ', age, name);
+    if(true) {
+        const age = 50
+        console.log('inside 2nd code block: ', age);
     }
-
-    console.log('you score: ', scores[i]);
-
-    if(scores[i] === 100) {
-        console.log('congrats, you got the top score');
-        break;
-    }
-    
 }
+console.log('outside code block: ', age, name);
